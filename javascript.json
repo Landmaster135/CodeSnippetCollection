@@ -25,5 +25,53 @@
 			"",
 			"});"
 		]
-	}	
+	},
+	"function definition": {
+		"prefix": "fu",
+		"description": "function definition",
+		"body": [
+			"function $1($2){",
+			"\t$3",
+			"}"
+		]
+	},
+	"import module": {
+		"prefix": "imp",
+		"description": "import module",
+		"body": "import $1 from '$2;"
+	},
+	"const definition": {
+		"prefix": "co",
+		"description": "const definition",
+		"body": [
+			"const $1 = ($2) => {",
+			"\t$3",
+			"};"
+		]
+	},
+	"const required definition": {
+		"prefix": "cor",
+		"description": "const required definition",
+		"body": "const { $1 } = require('$2');"
+	},
+	"class definition": {
+		"prefix": "cla",
+		"description": "class definition",
+		"body": [
+			"class $1{",
+			"\tconstructor(){",
+			"\t\tthis.$2 = $3;",
+			"\t};",
+			"};"
+		]
+	},
+	"module exports": {
+		"prefix": "mod",
+		"description": "module exports",
+		"body": [
+			"module.exports = {$1,",
+			"\t\t\t\t$2",
+			"};"
+		]
+	}
 }
