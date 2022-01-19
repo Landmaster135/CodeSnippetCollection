@@ -13,13 +13,14 @@
 	// 	"description": "Log output to console"
 	// }
 	"prefix": "it",
+	"description": "for Selenium test",
 	"body": [
-		"it(`${'backlogId'}: ${'0X_testCaseName'}`, async () => {",
-		"backlogId = '';",
-		"testCaseName = '';",
+		"it(`${'<backlogId>'}: ${'<0X_testCaseName>'}`, async () => {",
+		"\tbacklogId = '$1';",
+		"\ttestCaseName = '$2';",
 		"",
 		"",
-		"await outputLog(testCaseName, `${getStrRepeatedToMark('a')}`);",
+		"\tawait outputLog(testCaseName, `${getStrRepeatedToMark('a')}`);",
 		"",
 		"});"
 	]
