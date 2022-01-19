@@ -16,7 +16,7 @@
 		"prefix": "it",
 		"description": "for Selenium test",
 		"body": [
-			"it(`${'<backlogId>'}: ${'<0X_testCaseName>'}`, async () => {",
+			"it(`${'backlogId'}: ${'0X_testCaseName'}`, async () => {",
 			"\tbacklogId = '$1';",
 			"\ttestCaseName = '$2';",
 			"",
@@ -25,5 +25,5 @@
 			"",
 			"});"
 		]
-	}
+	}	
 }
