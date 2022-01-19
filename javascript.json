@@ -12,16 +12,18 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"prefix": "it",
-	"description": "for Selenium test",
-	"body": [
-		"it(`${'<backlogId>'}: ${'<0X_testCaseName>'}`, async () => {",
-		"\tbacklogId = '$1';",
-		"\ttestCaseName = '$2';",
-		"",
-		"",
-		"\tawait outputLog(testCaseName, `${getStrRepeatedToMark('a')}`);",
-		"",
-		"});"
-	]
+	"Selenium test": {
+		"prefix": "it",
+		"description": "for Selenium test",
+		"body": [
+			"it(`${'<backlogId>'}: ${'<0X_testCaseName>'}`, async () => {",
+			"\tbacklogId = '$1';",
+			"\ttestCaseName = '$2';",
+			"",
+			"",
+			"\tawait outputLog(testCaseName, `${getStrRepeatedToMark('a')}`);",
+			"",
+			"});"
+		]
+	}
 }
