@@ -1,77 +1,77 @@
 {
-	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-	"Selenium test": {
-		"prefix": "it",
-		"description": "for Selenium test",
-		"body": [
-			"it(`${'backlogId'}: ${'0X_testCaseName'}`, async () => {",
-			"\tbacklogId = '$1';",
-			"\ttestCaseName = '$2';",
-			"",
-			"",
-			"\tawait outputLog(testCaseName, `${getStrRepeatedToMark('a')}`);",
-			"",
-			"});"
-		]
-	},
-	"function definition": {
-		"prefix": "fu",
-		"description": "function definition",
-		"body": [
-			"function $1($2){",
-			"\t$3",
-			"}"
-		]
-	},
-	"import module": {
-		"prefix": "imp",
-		"description": "import module",
-		"body": "import $1 from '$2;"
-	},
-	"const definition": {
-		"prefix": "co",
-		"description": "const definition",
-		"body": [
-			"const $1 = ($2) => {",
-			"\t$3",
-			"};"
-		]
-	},
-	"const required definition": {
-		"prefix": "cor",
-		"description": "const required definition",
-		"body": "const { $1 } = require('$2');"
-	},
-	"class definition": {
-		"prefix": "cla",
-		"description": "class definition",
-		"body": [
-			"class $1{",
-			"\tconstructor(){",
-			"\t\tthis.$2 = $3;",
-			"\t};",
-			"};"
-		]
-	},
-	"module exports": {
-		"prefix": "mod",
-		"description": "module exports",
-		"body": [
-			"module.exports = {$1,",
-			"\t\t\t\t$2",
-			"};"
-		]
-	}
+  // Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Selenium test": {
+    "prefix": "it",
+    "description": "for Selenium test",
+    "body": [
+      "it(`${'backlogId'}: ${'0X_testCaseName'}`, async () => {",
+      "\tbacklogId = '$1';",
+      "\ttestCaseName = '$2';",
+      "",
+      "",
+      "\tawait outputLog(testCaseName, `${getStrRepeatedToMark('a')}`);",
+      "",
+      "});"
+    ]
+  },
+  "function definition": {
+    "prefix": "fu",
+    "description": "function definition",
+    "body": [
+      "function $1($2){",
+      "\t$3",
+      "}"
+    ]
+  },
+  "import module": {
+    "prefix": "imp",
+    "description": "import module",
+    "body": "import $1 from '$2;"
+  },
+  "const definition": {
+    "prefix": "co",
+    "description": "const definition",
+    "body": [
+      "const $1 = ($2) => {",
+      "\t$3",
+      "};"
+    ]
+  },
+  "const required definition": {
+    "prefix": "cor",
+    "description": "const required definition",
+    "body": "const { $1 } = require('$2');"
+  },
+  "class definition": {
+    "prefix": "cla",
+    "description": "class definition",
+    "body": [
+      "class $1{",
+      "\tconstructor(){",
+      "\t\tthis.$2 = $3;",
+      "\t};",
+      "};"
+    ]
+  },
+  "module exports": {
+    "prefix": "mod",
+    "description": "module exports",
+    "body": [
+      "module.exports = {$1,",
+      "\t\t\t\t$2",
+      "};"
+    ]
+  }
 }
