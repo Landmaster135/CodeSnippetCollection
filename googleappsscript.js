@@ -60,6 +60,17 @@ let text = file.getBlob().getDataAsString();
 let newText = "New Text";
 file.setContent(`{text}\n${newText}`);
 
+// Convert extension
+const folderId = 'folder ID';
+const folder = DriveApp.getFolderById(folderId);
+const files = folder.getFiles();
+while (files.hasNext()) {
+  let png = files.next()
+  let jpg = png.getAs(MimeType.JPEG);   // png→jpeg　に変換
+  DriveApp.getFolderById(folderId).createFile(jpg);
+  console.log('generate file: ', jpg.getName())
+}
+
 // Google Form ------------------------------------------------------------
 
 // Get input values
