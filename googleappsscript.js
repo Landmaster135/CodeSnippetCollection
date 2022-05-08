@@ -41,6 +41,7 @@ const calendar = CalendarApp.getCalendarById('Calendar ID')
 
 // DriveApp ------------------------------------------------------------
 
+// Get folder and file list
 const folder = DriveApp.getFolderById('Folder ID')
 const files = folder.getFiles()
 while (files.hasNext()) {
@@ -52,6 +53,12 @@ while (folders.hasNext()) {
   let folder = folders.next()
   console.log('folder: ', folder.getName())
 }
+
+// 既存ファイルの読み込みと追記
+let file = DriveApp.getFileById('File ID');
+let text = file.getBlob().getDataAsString();
+let newText = "New Text";
+file.setContent(`{text}\n${newText}`);
 
 // Google Form ------------------------------------------------------------
 
