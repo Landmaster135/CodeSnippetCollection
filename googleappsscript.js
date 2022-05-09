@@ -1,7 +1,7 @@
 // SpreadsheetApp ------------------------------------------------------------
 
 // Add custom menu
-const onOpen = () => {
+function onOpen(){
   SpreadsheetApp
     .getActiveSpreadsheet()
     .addMenu('Menu name', [
@@ -11,12 +11,12 @@ const onOpen = () => {
 }
 
 // onEdit trigger
-const onEdit = e => {
+function onEdit(e){
   const { range, oldValue, value } = e
 }
 
 // onSelectionChange trigger
-const onSelectionChange = e => {
+function onSelectionChange(e){
   const { range, user } = e
 }
 
@@ -119,14 +119,14 @@ const text = LanguageApp.translate('Hello World', 'en', 'ja')
 // Web Apps ------------------------------------------------------------
 
 // Website ( no HTML template )
-const doGet = e => {
+function doGet(e){
   const params = JSON.stringify(e.parameter)
   return HtmlService.createHtmlOutput(params)
 }
 
 // Website ( with HTML template )
 // You need to create index.html file.
-const doGet = e => {
+function doGet(e){
   return HtmlService.createHtmlOutputFromFile('index')
 }
 
@@ -134,7 +134,7 @@ const doGet = e => {
 // GET API
 // You can get query string with accessing e.parameter.
 
-const doGet = e => {
+function doGet(e){
   const params = JSON.stringify(e.parameter)
   return ContentService
     .createTextOutput(params)
@@ -144,7 +144,7 @@ const doGet = e => {
 // POST API
 // You can get request body with accessing e.postData.contents.
 
-const doPost = e =>  {
+function doPost(e){
   const body = e.postData.contents
   return ContentService
     .createTextOutput(body)
