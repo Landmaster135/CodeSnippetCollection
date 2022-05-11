@@ -166,6 +166,11 @@ const res = UrlFetchApp.fetch(url, {
 
 // Text by windows in GSS --------------------------------------------------------
 
+/**
+   * Get
+   * @param {} e
+   * @return {void}
+*/
 function doGetTestWithGssModelessDialog(e) {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const html = HtmlService.createTemplateFromFile("index")
@@ -175,6 +180,11 @@ function doGetTestWithGssModelessDialog(e) {
   ss.show(html);
 }
 
+/**
+   * Get
+   * @param {} e
+   * @return {void}
+*/
 function doGetTestWithGssSidebar(e) {
   const html = HtmlService.createTemplateFromFile("index")
     .evaluate()
@@ -183,6 +193,11 @@ function doGetTestWithGssSidebar(e) {
   SpreadsheetApp.getUi().showSidebar(html);
 }
 
+/**
+   * Get
+   * @param {} e
+   * @return {void}
+*/
 function doGetTestWithGssModalDialog(e) {
   const html = HtmlService.createTemplateFromFile("index")
     .evaluate()
