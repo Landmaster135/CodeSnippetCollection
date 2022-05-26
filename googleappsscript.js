@@ -20,6 +20,13 @@ function onSelectionChange(e){
   const { range, user } = e
 }
 
+// Get values of selected area
+function getValuesBySelectedArea(){
+  const ss = SpreadsheetApp.getActive().getSheetByName(sheetName1st);
+  const activeValues = ss.getActiveRange().getValues();
+  return activeValues;
+}
+
 // CalendarApp ------------------------------------------------------------
 
 // Create event
