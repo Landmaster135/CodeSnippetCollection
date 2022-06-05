@@ -13,10 +13,17 @@
 	// 	"description": "Log output to console"
 	// }
   "a tag with href": {
-    "prefix": "ahref",
-    "description": "input a tag with href",
-    "body": [
+    "prefix": "ahref"
+    , "description": "input a tag with href"
+    , "body": [
       "<a href=\"$1\">$2</a>"
+    ]
+  }
+  , "img tag with width of 50% and src": {
+    "prefix": "img50src"
+    , "description": "input img tag with width of 50% and src"
+    , "body": [
+      "<img width=\"50%\" alt=\"$1\" src=\"$2\">"
     ]
   }
 }
